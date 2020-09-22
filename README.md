@@ -99,3 +99,20 @@ read myName
 
 echo "My name is $myName"
 ```
+
+## Conditions
+
+if / else
+
+```shell script
+echo "What is your age?"
+
+read age
+
+if [$age -gt 17]
+then
+    echo "I am an adult"
+else
+    echo "I am not an adult"
+fi
+```
