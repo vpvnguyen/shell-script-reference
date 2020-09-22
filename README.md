@@ -15,7 +15,7 @@ bash <filename>
 sh <filename>
 ```
 
-Execute file:
+Execute file directly:
 
 - Take ownership of file
 
@@ -37,6 +37,14 @@ chmod +x <filename>
 
 ```shell script
 ./<filename>
+```
+
+## Globals
+
+Get current user
+
+```shell script
+echo "Hello, ${whoami}"
 ```
 
 ## Strings
@@ -66,3 +74,16 @@ Escape flag
 echo -e "Add a new line\n"
 printf "Add a new line\n"
 ```
+
+## Variables
+
+Declare and use variables
+
+```shell script
+world="World"
+
+echo "Hello, $world" # Hello, World
+echo "Hello, ${world}" # Hello, World
+```
+
+> No space allowed between `=` operator
