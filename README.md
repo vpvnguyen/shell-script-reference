@@ -1,5 +1,7 @@
 # shell-script-reference
 
+## Bash Interpreter | Executing Scripts
+
 Bash interpreter location:
 
 ```
@@ -35,4 +37,32 @@ chmod +x <filename>
 
 ```shell script
 ./<filename>
+```
+
+## Strings
+
+Simple string does not require quotes
+
+```shell script
+echo This is a string
+```
+
+Single or double quotes requires escaping
+
+```shell script
+echo I\'m a string
+```
+
+Usage of single or double quotes requires wrapping
+
+```shell script
+echo 'Single "quotes"'
+echo "Double 'quotes'"
+```
+
+Escape flag
+
+```shell script
+echo -e "Add a new line\n"
+printf "Add a new line\n"
 ```
