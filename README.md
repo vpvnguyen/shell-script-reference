@@ -132,6 +132,13 @@ done
 
 ## Arrays
 
+Get value from index
+
+```shell script
+array=('Value' 'Value2' 'Value3')
+echo ${array[1]} # Value2
+```
+
 ## Select Construct
 
 Example
