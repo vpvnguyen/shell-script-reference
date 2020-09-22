@@ -116,3 +116,18 @@ else
     echo "I am not an adult"
 fi
 ```
+
+## Loops
+
+Loop through files
+
+```shell script
+files=/folder/dir/*
+
+for file in $files
+do
+    echo $(basename $file)
+done
+```
+
+## Arrays
