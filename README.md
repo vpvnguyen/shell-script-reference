@@ -87,3 +87,15 @@ echo "Hello, ${world}" # Hello, World
 ```
 
 > No space allowed between `=` operator
+
+## Input
+
+Read user input
+
+```shell script
+echo "What is your name?"
+
+read myName
+
+echo "My name is $myName"
+```
