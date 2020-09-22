@@ -131,3 +131,56 @@ done
 ```
 
 ## Arrays
+
+## Select Construct
+
+Example
+
+```shell script
+select ITEM in [LIST]
+do
+  [COMMANDS]
+done
+```
+
+Select an item
+
+```shell script
+PS3="Enter a number: "
+select character in Sheldon Leonard Penny Howard Raj
+do
+    echo "Selected character: $character"
+    echo "Selected number: $REPLY"
+done
+
+# 1) Sheldon
+# 2) Leonard
+# 3) Penny
+# 4) Howard
+# 5) Raj
+# Enter a number: 3
+# Selected character: Penny
+# Selected number: 3
+# Enter a number:
+
+PS3="Enter a number: "
+characters=("Sheldon" "Leonard" "Penny")
+select character in "${characters[@]}"
+do
+    case $character in
+        "Sheldon")
+            echo $character # Sheldon
+            ;;
+        "Leonard")
+            echo $character # Leonard
+            ;;
+        "Penny")
+           echo $character # Penny
+            ;;
+        "Quit")
+            break
+            ;;
+        *) echo "invalid option $REPLY";; # number chosen
+    esac
+done
+```
